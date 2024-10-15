@@ -184,6 +184,8 @@ callouts:
 # ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
 
 clarity_tracking: oivg0vzhe3
+clarity_heatmaps: true
+clarity_recordings: false
 
 plugins:
   - jekyll-seo-tag

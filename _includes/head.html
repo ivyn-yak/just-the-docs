@@ -43,6 +43,14 @@
           t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
           y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
       })(window, document, "clarity", "script", "{{ site.clarity_tracking }}");
+
+      {% if site.clarity_heatmaps == false %}
+        clarity("set", "heatmaps", false);
+      {% endif %}
+
+      {% if site.clarity_recordings == false %}
+        clarity("set", "recordings", false);
+      {% endif %}
     </script>
   {% endif %}
 
